@@ -1,8 +1,8 @@
-; Filename: shell_bind_tcp.nasm
+; Filename: shell_reverse_tcp.nasm
 ; Author:   Stylianos Voukatas
 ; Website:  https://vostdev.wordpress.com/
 ;
-; Purpose:  Assignment 1 for SLAE
+; Purpose:  Assignment 2 for SLAE
 ; SLAE:     http://securitytube-training.com/onlinecourses/securitytube-linux-assembly-expert/
 
 ; Student ID: PA-27669
