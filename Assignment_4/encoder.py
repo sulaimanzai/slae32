@@ -100,9 +100,9 @@ while markerFound :
 
     
 
-encoded += marker1 + marker1
+encoded += marker1
 
-encoded2 += marker2 + ',' + marker2
+encoded2 += marker2
 
 
 #print "complementShellCode"
