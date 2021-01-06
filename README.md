@@ -5,5 +5,5 @@ http://securitytube-training.com/onlinecourses/securitytube-linux-assembly-exper
 
 Student ID: PA-27669
 
-For an extensive analysis on the code please check my blog posts in:
+Visit my blog to see the writeups:
 https://vostdev.wordpress.com/
